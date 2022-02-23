@@ -46,8 +46,7 @@ class Recommendation {
   @override
   String toString() {
     return '''
-    Recommended ID: ${id} 
-    Product Name: ${name} 
+    Product ${id}: ${name} 
     Average Rating: ${avgRating} 
     Number Rating: ${numRating}
     ''';
@@ -71,6 +70,7 @@ class _ProductPageState extends State<ProductPage> {
   String _productName = "";
   String _productImgUrl = "";
   String _recommendationName = "";
+  String _errorMessage = "";
 
   String _recommendedProducts = "";
 
@@ -202,7 +202,7 @@ class _ProductPageState extends State<ProductPage> {
                       top: 0, left: 150, right: 150, bottom: 10),
                   child: Column(children: [
                     Text(
-                      "Product Name: " + _productName,
+                      _productName,
                       style: const TextStyle(fontSize: 30),
                     ),
                   ])
@@ -258,8 +258,6 @@ class _ProductPageState extends State<ProductPage> {
                         } else {
                           setState(() {
                             isVisible = true;
-                            _recommendationName =
-                                "The user you searched does not exist! Oops!";
                           });
                         }
                       });
@@ -268,13 +266,13 @@ class _ProductPageState extends State<ProductPage> {
               Container(
                   padding: const EdgeInsets.only(
                       top: 0, left: 150, right: 150, bottom: 10),
-                  child: Column(children: [
+                  child: Stack(children: [
                     Text(
-                      "User Name: " + _recommendationName,
+                      _recommendedProducts.toString(),
                       style: const TextStyle(fontSize: 30),
                     ),
                     Text(
-                      _recommendedProducts.toString(),
+                      _errorMessage,
                       style: const TextStyle(fontSize: 30),
                     ),
                   ])),
