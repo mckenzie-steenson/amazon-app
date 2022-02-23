@@ -35,8 +35,13 @@ flutter pub upgrade
 
 ## Dependencies
 ```pubspec.yaml
-  firebase_core: ^1.6.0
-  firebase_storage: ^10.0.6
-
+  http: ^0.13.4
+  url_launcher: ^6.0.18
+  firebase_core: ^1.6.3
+  cloud_firestore: ^1.0.4
+  firebase_storage: ^10.0.3
+  file_picker: ^4.0.3
+  flutter:
+    sdk: flutter
 ```
 
