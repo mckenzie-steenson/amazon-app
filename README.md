@@ -13,6 +13,10 @@
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://mckenziesteenson.medium.com/utilizing-graph-technologies-to-connect-employees-57e0fef495d7)
   
 </div>
+  
+<p align="center">
+<img src="(https://user-images.githubusercontent.com/91917199/155377947-7c53c74f-5e7e-48e3-b5be-5b940bb034a2.png)" width="100%">
+</p>
 
 ## amazon-app
 A recommender application of Amazon products built with TigerGraph and Flutter
