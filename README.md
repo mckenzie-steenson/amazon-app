@@ -14,11 +14,12 @@
   
 </div>
 
-
-# amazon-app
+# App
 A recommender application of Amazon products built with TigerGraph and Flutter
 
 Clone the repository into your local workspace to get started! 
+  
+Follow this guide to understand the App environment setup, build process, TigerGraph integration, and Flutter development 👉 : https://kristinezhengx.github.io/amazon-app-site/
 
 Running into issues building the Flutter App?
 
@@ -29,22 +30,8 @@ flutter clean
 flutter pub upgrade
 ```
 
-Follow this guide to understand the App environment setup, build process, TigerGraph integration, and Flutter development: https://kristinezhengx.github.io/amazon-app-site/
-
-
 ## Flutter
 [Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
-
-## App
-
-  
-Check out the video tutorial 👉 : 
-
-To know more awesome content about Flutter., 
-
-Visit my channel 👉 : 
-
-
 
 ## Dependencies
 ```pubspec.yaml
