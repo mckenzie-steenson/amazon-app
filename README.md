@@ -14,7 +14,7 @@
   
 </div>
 
-# App
+## amazon-app
 A recommender application of Amazon products built with TigerGraph and Flutter
 
 Clone the repository into your local workspace to get started! 
