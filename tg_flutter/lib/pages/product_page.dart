@@ -1,3 +1,4 @@
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
@@ -102,6 +103,17 @@ class _ProductPageState extends State<ProductPage> {
     }
   }
 
+// create list of the images you want to include
+  Future _getImage(BuildContext context, String imageName) async {
+    String? downloadURL;
+    downloadURL =
+        await FirebaseStorage.instance.ref().child(imageName).getDownloadURL();
+
+    return downloadURL;
+  }
+
+  bool isButtonPressed = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,6 +165,11 @@ class _ProductPageState extends State<ProductPage> {
                             _productString = productController.text;
                             _productName = (result.name);
                             _productImgUrl = (result.imgURL);
+
+                            _getImage(
+                                context, "test/" + _productString + ".jpeg");
+                            print(_productString + ".jpeg");
+                            isButtonPressed = true;
                           });
                         } else {
                           setState(() {
@@ -163,6 +180,23 @@ class _ProductPageState extends State<ProductPage> {
                       });
                     },
                   )),
+              if (isButtonPressed)
+                FutureBuilder(
+                    future:
+                        _getImage(context, "test/" + _productString + ".jpeg"),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasError) {
+                        return const Text(
+                          "Something went wrong",
+                        );
+                      }
+                      if (snapshot.connectionState == ConnectionState.done) {
+                        return Image.network(
+                          snapshot.data.toString(),
+                        );
+                      }
+                      return const Center(child: CircularProgressIndicator());
+                    }),
               Container(
                   padding: const EdgeInsets.only(
                       top: 0, left: 150, right: 150, bottom: 10),
@@ -171,11 +205,6 @@ class _ProductPageState extends State<ProductPage> {
                       "Product Name: " + _productName,
                       style: const TextStyle(fontSize: 30),
                     ),
-                    const Text(
-                      "Product Image: ",
-                      style: TextStyle(fontSize: 30),
-                    ),
-                    Image.network(_productImgUrl),
                   ])
                   //
 
