@@ -15,7 +15,7 @@
 </div>
   
 <p align="center">
-<img src="(https://user-images.githubusercontent.com/91917199/155377947-7c53c74f-5e7e-48e3-b5be-5b940bb034a2.png)" width="100%">
+<img src="tg_flutter/assets/images/Email Banners (22).png" width="100%">
 </p>
 
 ## amazon-app
