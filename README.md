@@ -33,7 +33,7 @@ flutter clean
 flutter pub upgrade
 ```
   
-**IMPORTANT NOTE: If you are building the Flutter Application with Firebase Storage implemented, you must run the below code to handle null safety**
+**IMPORTANT NOTE: If you are building the Flutter Application with Firebase Storage implemented (the code in the repo), you must run the below code to handle null safety**
 ```
 flutter run -d chrome --no-sound-null-safety --web-renderer=html
 ```
