@@ -18,11 +18,10 @@
 <img src="tg_flutter/assets/images/Email Banners (22).png" width="100%">
 </p>
 
-## amazon-app
-A recommender application of Amazon products built with TigerGraph and Flutter
+## Getting Started
 
 Clone the repository into your local workspace to get started! 
-  
+
 Follow this guide to understand the App environment setup, build process, TigerGraph integration, and Flutter development 👉 : https://kristinezhengx.github.io/amazon-app-site/
 
 Running into issues building the Flutter App?
