@@ -32,6 +32,11 @@ Run the following commands:
 flutter clean
 flutter pub upgrade
 ```
+  
+**IMPORTANT NOTE: If you are building the Flutter Application with Firebase Storage implemented, you must run the below code to handle null safety**
+```
+flutter run -d chrome --no-sound-null-safety --web-renderer=html
+```
 
 ## Flutter
 [Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
