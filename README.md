@@ -29,6 +29,11 @@ Follow this guide to understand the App environment setup, build process, TigerG
 <img src="tg_flutter/assets/images/architectureDiagram.png" width="100%">
 </p>
 
+## TigerGraph
+
+## Flutter
+[Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
+  
 Running into issues building the Flutter App?
 
 Run the following commands:
@@ -42,10 +47,6 @@ flutter pub upgrade
 ```
 flutter run -d chrome --no-sound-null-safety --web-renderer=html
 ```
-## TigerGraph
-
-## Flutter
-[Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
   
 ## Cloud Firebase Storage
 
