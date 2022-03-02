@@ -24,6 +24,11 @@ Clone the repository into your local workspace to get started!
 
 Follow this guide to understand the App environment setup, build process, TigerGraph integration, and Flutter development 👉 : https://kristinezhengx.github.io/amazon-app-site/
 
+## Architecture Diagram
+<p align="center">
+<img src="tg_flutter/assets/images/architectureDiagram.png" width="100%">
+</p>
+
 Running into issues building the Flutter App?
 
 Run the following commands:
