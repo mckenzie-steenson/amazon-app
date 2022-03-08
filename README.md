@@ -24,13 +24,16 @@ Clone the repository into your local workspace to get started!
 
 Follow this guide to understand the App environment setup, build process, TigerGraph integration, and Flutter development 👉 : https://kristinezhengx.github.io/amazon-app-site/
 
+Find all helpful links to resources and documentation here 👉 : https://docs.google.com/document/d/1YlvnGH-_G9lWnzl09kCsDYsTgYvkJrQ8-9rHSosoe-o/edit?usp=sharing
+
 ## Architecture Diagram
 <p align="center">
 <img src="tg_flutter/assets/images/architectureDiagram.png" width="100%">
 </p>
 
 ## TigerGraph
-
+[TigerGraph](https://www.tigergraph.com/) is a graph database platform utilized for product serive and marketing, fruad protection, and in the case of this project, for a recommendation engine.
+  
 ## Flutter
 [Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
   
@@ -49,6 +52,7 @@ flutter run -d chrome --no-sound-null-safety --web-renderer=html
 ```
   
 ## Cloud Firebase Storage
+[Cloud Storage for Firebase](https://firebase.google.com/docs/storage) is built for app devlopers who need to store and serve user-generated content such as photos or videos.
 
 ## Dependencies
 ```pubspec.yaml
